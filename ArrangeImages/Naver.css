@@ -1,0 +1,107 @@
+img {
+    width: 100%;
+    height: 100%;
+}
+
+#top {
+    display: flex;
+    width: 975px;
+}
+
+#middle {
+    display: flex;
+    width: 975px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+#bottomAd {
+    display: flex;
+    width: 975px;
+    position: relative;
+}
+
+#TopLeftMenu {
+    width: 90px;
+    height: 45px;
+    position: absolute;
+    left: 30px;
+}
+
+#TopRightMenu {
+    width: 90px;
+    height: 45px;
+    position: absolute;
+    right: 30px;
+}
+
+#search {
+    width: 570px;
+    height: 150px;
+    display: flex;
+    position: relative;
+    top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#LeftAd {
+    width: 645px;
+    height: 120px;
+}
+
+#LeftNews {
+    width: 645px;
+    height: 330px;
+}
+
+#LeftShopping {
+    width: 645px;
+    height: 420px;
+}
+
+#LeftWeb {
+    width: 645px;
+    height: 675px;
+}
+
+#RightLogin {
+    width: 330px;
+    height: 135px;
+}
+
+#RightAd {
+    width: 330px;
+    height: 210px;
+}
+
+#RightWeather {
+    width: 330px;
+    height: 375px;
+}
+
+#RightWidget {
+    width: 330px;
+    height: 630px;
+}
+
+#RightNew {
+    width: 330px;
+    height: 75px;
+}
+
+#bottomAd {
+    width: 975px;
+    height: 330px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#FixedMenu {
+    width: 90px;
+    height: 45px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
