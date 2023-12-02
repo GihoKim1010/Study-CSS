@@ -1,0 +1,33 @@
+#x{
+    display: flex;
+    flex-direction: row; /*flex의 방향을 가로로 지정. default 값. */
+    /*flex-direction: column;*/ /*flex의 방향을 세로로 지정. */
+    background-color: pink; /*아래 퍼센트 합이 90%라 남은 10%에 배경색 대로 나옴 */
+    height: 100px;
+}
+
+#a{
+    background-color: red;
+    flex-basis: 10%; /*아래 flex-basis 값의 퍼센트 대로 차지함. 방향은 부모 영역에 지정한대로. */
+    height:100px;
+}
+#b{
+    background-color: orange;
+    flex-basis: 30%;
+    height: 150px; /*height 값을 부모영역보다 크게 해봤는데, 혼자 튀어나옴 */
+}
+#c{
+    background-color: yellow;
+    flex-basis: 20%;
+    height:100px;
+}
+#d{
+    background-color: green;
+    flex-basis: 20%;
+    height:100px;
+}
+#e{
+    background-color: blue;
+    flex-basis: 10%;
+    height:100px;
+}
