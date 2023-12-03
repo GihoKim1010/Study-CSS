@@ -1,0 +1,36 @@
+#boundary {
+    display: grid;   /*이 요소의 아이템(자식)들에 grid 사용 선언*/
+    /* 내부 아이템들을 블록 레벨 요소로서 배치. grid를 inline-grid로 교체 시 인라인 레벨 요소로서 배치함. */    
+
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    /* 단위 길이(1fr)만큼씩 떨어진 곳에 총 9개 열이 배치됨. 9개가 초과 될 경우 다음 행에 나온다.*/
+    /* Html 파일에 총 72개의 box를 배열 했으므로, 9열*8행 으로 배열된다.*/
+
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;  
+    /* 단위 길이(1fr)만큼씩 떨어진 곳에 다음 행이 배치됨.*/
+
+    width: 900px;
+    height: 800px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    /* box의 넓이 지정 */
+}
+
+.box:nth-of-type(2n+1){
+    background-color: black;    
+}
+/* 홀수 번째 검은색 */
+
+.box:nth-of-type(2n){
+    background-color: white;    
+}
+/* 짝수 번째 흰색 */
+
+.box:nth-of-type(9n){
+    visibility: hidden;
+}
+/* 9번째 마다 안보이게 처리. 9열로 한 이유는, 8열로 할 경우 1열에 1,9,17... 번째가 오는데, 전부 홀수 이기 때문에 1열에 전부 검정색이 와버린다.
+   9번째 열을 만들고, 안보이게 처리하여 한 열에 검정색 흰색이 반복되게 만들었다. */
